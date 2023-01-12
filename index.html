@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness with Smile:)</title>
+</head>
+<link rel="stylesheet" href="" class="style.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Baloo Bhai', cursive;
+        margin:0;
+        padding:0;
+        background: url('img/bg.jpg');
+        color: white;
+    }
+    .left{
+        display: inline-block;
+        position:absolute;
+        top:20px;
+        left:60px;
+        /* border: 2px solid red; */
+    }
+    .mid{
+        display: block;
+        margin: 20px auto;
+        width:33%;
+        /* border:2px solid green; */
+    }
+    .left img{
+        width: 100px;
+        filter: invert(100%);
+    }
+    .right{
+        display: inline-block;
+        position:absolute;
+        top:20px;
+        right:34px;
+        /* border:2px solid yellow; */
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        color: rgb(206, 206, 206);
+        text-decoration: underline;
+    }
+    .btn{
+        font-family: 'Baloo Bhai', cursive;
+        padding: 4px 14px;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+         cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(46, 45, 45);
+    }
+    .container{
+        border: 2px solid white;
+        border-radius: 28px;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+    }
+    .form-group input{
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: 11px auto ;
+        width: 508px;
+        padding: 1px;
+        font-size: 28px;
+        display: block;
+        font-family: 'Baloo Bhai', cursive;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: 20px auto;
+        width: 82%;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/gym.png" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact-Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+           <button class="btn">Call-Us</button>
+           <button class="btn">Email-Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Satna now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your age">
+                <input type="text" name="" placeholder="Enter your gender">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
